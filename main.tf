@@ -6,7 +6,7 @@ provider aws {
 
 
 module "mjvpc" {
-   source = "c:/new/module/"
+   source = "./module/"
    vpc-cidr = var.vpc-cidr
    mandy = var.mandy
    
