@@ -5,13 +5,13 @@ variable "region" {
 
 variable "akey" {
  description = "access_key"
- default = 
+ default = AWS_ACCESS_KEY_ID
   
 }
 
 variable "skey"{
   description = "secret_key"
-  default = 
+  default = AWS_SECRET_ACCESS_KEY
 }
 
 variable "vpc-cidr" {
