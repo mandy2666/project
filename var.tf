@@ -5,12 +5,12 @@ variable "region" {
 
 variable "akey" {
   description = "access_key"
-  default     = env("AWS_ACCESS_KEY_ID")
+  default     = ("AWS_ACCESS_KEY_ID")
 }
 
 variable "skey" {
   description = "secret_key"
-  default     = env("AWS_SECRET_ACCESS_KEY")
+  default     = ("AWS_SECRET_ACCESS_KEY")
 }
 
 
