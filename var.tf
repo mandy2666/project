@@ -4,15 +4,15 @@ variable "region" {
 }
 
 variable "akey" {
- description = "access_key"
- default = var.AWS_ACCESS_KEY_ID
-  
+  description = "access_key"
+  default     = env("AWS_ACCESS_KEY_ID")
 }
 
-variable "skey"{
+variable "skey" {
   description = "secret_key"
-  default = var.AWS_SECRET_ACCESS_KEY
+  default     = env("AWS_SECRET_ACCESS_KEY")
 }
+
 
 variable "vpc-cidr" {
   description = "vpc_cidr"
